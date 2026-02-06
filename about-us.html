@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adamsons — About us</title>
+    <meta name="description" content="About Adamsons." />
+
+    <!-- Open Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Neulis Neue (headings) -->
+    <link rel="stylesheet" href="https://use.typekit.net/rlg1vvi.css" />
+
+    <!-- Shared stylesheet from homepage project -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header (shared) -->
+    <header class="site-header" role="banner">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Adamsons home">
+          <span class="brand__text">ADAMSONS</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <ul class="primary-nav__list">
+            <li><a href="about-us.html" aria-current="page">About us</a></li>
+            <li><a href="#">Our expertise</a></li>
+            <li><a href="#">For clients</a></li>
+            <li><a href="#">For candidates</a></li>
+            <li><a href="#">News, events &amp; insights</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" type="button" aria-label="Search" data-search-open>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M10.5 3a7.5 7.5 0 1 0 4.8 13.3l4.45 4.45 1.4-1.4-4.45-4.45A7.5 7.5 0 0 0 10.5 3Zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"
+              />
+            </svg>
+          </button>
+
+          <a class="header-actions__link" href="#">Log in</a>
+
+          <div class="lang" aria-label="Language">
+            <a href="#" aria-current="true">EN</a>
+            <span aria-hidden="true">/</span>
+            <a href="#">FR</a>
+            <span aria-hidden="true">/</span>
+            <a href="#">DE</a>
+          </div>
+
+          <a class="btn btn--primary header-cta" href="#">Get in touch</a>
+
+          <button
+            class="icon-btn mobile-menu-btn"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="mobile-drawer"
+            aria-expanded="false"
+            data-drawer-open
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile drawer + overlay (shared) -->
+    <div class="overlay" hidden data-overlay></div>
+
+    <!-- Search overlay -->
+    <div
+      class="search-overlay"
+      hidden
+      data-search-overlay
+      role="dialog"
+      aria-modal="true"
+      aria-label="Site search"
+    >
+      <div class="search-overlay__panel">
+        <div class="search-overlay__top">
+          <p class="search-overlay__title">Search</p>
+          <button
+            class="icon-btn search-overlay__close"
+            type="button"
+            aria-label="Close search"
+            data-search-close
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7 4.3 4.3l6.3 6.3 6.3-6.3 1.4 1.4Z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <form class="search-overlay__form" role="search" aria-label="Site search">
+          <label class="sr-only" for="site-search">Search</label>
+          <input
+            id="site-search"
+            name="q"
+            type="search"
+            placeholder="Search"
+            autocomplete="off"
+            class="search-overlay__input"
+            data-search-input
+          />
+          <button class="search-overlay__button" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <aside
+      id="mobile-drawer"
+      class="drawer"
+      aria-label="Mobile menu"
+      aria-hidden="true"
+      hidden
+      data-drawer
+    >
+      <div class="drawer__top">
+        <button class="icon-btn" type="button" aria-label="Search" data-search-open>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M10.5 3a7.5 7.5 0 1 0 4.8 13.3l4.45 4.45 1.4-1.4-4.45-4.45A7.5 7.5 0 0 0 10.5 3Zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"
+            />
+          </svg>
+        </button>
+
+        <button class="icon-btn" type="button" aria-label="Close menu" data-drawer-close>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7 4.3 4.3l6.3 6.3 6.3-6.3 1.4 1.4Z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer__nav" aria-label="Mobile primary">
+        <ul>
+          <li><a href="about-us.html" aria-current="page">About us</a></li>
+          <li><a href="#">Our expertise</a></li>
+          <li><a href="#">For clients</a></li>
+          <li><a href="#">For candidates</a></li>
+          <li><a href="#">News, events &amp; insights</a></li>
+        </ul>
+      </nav>
+
+      <div class="drawer__meta">
+        <h2 class="drawer__meta-title">Contact</h2>
+        <a class="drawer__meta-link" href="#">Log in</a>
+
+        <div class="drawer__langs" aria-label="Languages">
+          <a href="#" aria-current="true">EN</a>
+          <span aria-hidden="true">/</span>
+          <a href="#">FR</a>
+          <span aria-hidden="true">/</span>
+          <a href="#">DE</a>
+        </div>
+
+      </div>
+    </aside>
+
+    <main id="main">
+      <!-- Page hero -->
+      <section class="page-hero" aria-labelledby="about-title">
+        <div class="container page-hero__inner">
+          <p class="page-hero__eyebrow">About us</p>
+          <h1 id="about-title" class="page-hero__title caps">
+            Go vere num ni est res popublius halaris hosum notis vercesstres consili caelicieme nost gratilius.
+          </h1>
+          <a class="btn btn--primary" href="#">Find out more</a>
+        </div>
+      </section>
+
+      <!-- About tabs -->
+      <section class="section-nav" aria-label="In this section">
+        <div class="container section-nav__inner">
+          <!-- Desktop tabs (JS-enhanced) -->
+          <div class="subtabs" role="tablist" aria-label="About sections" data-about-tabs>
+            <button class="subtab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-story" id="tab-story" data-tab="story">
+              Our story
+            </button>
+            <button class="subtab" type="button" role="tab" aria-selected="false" aria-controls="panel-people" id="tab-people" data-tab="people">
+              Our people
+            </button>
+            <button class="subtab" type="button" role="tab" aria-selected="false" aria-controls="panel-culture" id="tab-culture" data-tab="culture">
+              Our culture &amp; values
+            </button>
+            <button class="subtab" type="button" role="tab" aria-selected="false" aria-controls="panel-global" id="tab-global" data-tab="global">
+              Global reach
+            </button>
+            <button class="subtab" type="button" role="tab" aria-selected="false" aria-controls="panel-careers" id="tab-careers" data-tab="careers">
+              Careers at Adamsons
+            </button>
+          </div>
+
+          <!-- Mobile "In this section" -->
+          <details class="section-menu" data-section-menu>
+            <summary class="section-menu__summary">
+              <span>In this section</span>
+              <span class="section-menu__chev" aria-hidden="true">▾</span>
+            </summary>
+            <div class="section-menu__panel" role="navigation" aria-label="About sections">
+              <a class="section-menu__link" href="#story" data-tab-link="story">Our story</a>
+              <a class="section-menu__link" href="#people" data-tab-link="people">Our people</a>
+              <a class="section-menu__link" href="#culture" data-tab-link="culture">Our culture &amp; values</a>
+              <a class="section-menu__link" href="#global" data-tab-link="global">Global reach</a>
+              <a class="section-menu__link" href="#careers" data-tab-link="careers">Careers at Adamsons</a>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Tab panels (swap this whole block when tabs change) -->
+      <section class="section section--panel" aria-label="About content">
+        <div class="container" data-about-panels>
+          <div id="panel-story" class="panel" role="tabpanel" tabindex="0" aria-labelledby="tab-story" data-panel="story">
+            <h2 class="panel__title caps">Our story</h2>
+            <div class="panel__copy">
+              <p>
+                Obis mi, to event, eumquas nullandus preped quo tem resstni iamsuae
+                ninporectat. Orit lacidest est quis maiso inimet liciscii ipsaperiate.
+                Sae quibus, ulparis autem. Onsequi apis simus rest, autem nonsero.
+              </p>
+              <p>
+                Eumquas nullandus preped quo tem resstni iamsuae ninporectat. Orit
+                lacidest est quis maiso inimet liciscii ipsaperiate. Sae quibus,
+                ulparis autem. Onsequi apis simus rest, autem nonsero.
+              </p>
+            </div>
+          </div>
+
+          <div id="panel-people" class="panel" role="tabpanel" tabindex="0" aria-labelledby="tab-people" data-panel="people" hidden>
+            <h2 class="panel__title caps">Our people</h2>
+            <div class="panel__copy">
+              <p>
+                People-focused copy goes here. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Quos, ulparis autem — onsequi apis simus rest.
+              </p>
+              <p>
+                Add team values, approach to search, and how the team supports clients
+                and candidates. (Placeholder content.)
+              </p>
+            </div>
+          </div>
+
+          <div id="panel-culture" class="panel" role="tabpanel" tabindex="0" aria-labelledby="tab-culture" data-panel="culture" hidden>
+            <h2 class="panel__title caps">Our culture &amp; values</h2>
+            <div class="panel__copy">
+              <p>
+                Culture and values content placeholder. Emphasise quality, integrity,
+                partnership, and long-term relationships.
+              </p>
+              <p>
+                This is where you can expand on principles, ways of working, and what
+                “beyond” means day-to-day.
+              </p>
+            </div>
+          </div>
+
+          <div id="panel-global" class="panel" role="tabpanel" tabindex="0" aria-labelledby="tab-global" data-panel="global" hidden>
+            <h2 class="panel__title caps">Global reach</h2>
+            <div class="panel__copy">
+              <p>
+                Global reach placeholder. Mention international networks, cross-border
+                searches, and multi-market expertise.
+              </p>
+              <p>
+                Include a few regions/industries and the kind of roles supported.
+              </p>
+            </div>
+          </div>
+
+          <div id="panel-careers" class="panel" role="tabpanel" tabindex="0" aria-labelledby="tab-careers" data-panel="careers" hidden>
+            <h2 class="panel__title caps">Careers at Adamsons</h2>
+            <div class="panel__copy">
+              <p>
+                Careers content placeholder. Outline opportunities, development, and
+                what it’s like to work here.
+              </p>
+              <p>
+                Add calls-to-action for open roles and contacting the team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video image -->
+      <section class="section section--media" aria-label="Video">
+        <div class="container">
+          <a class="media-card" href="#" aria-label="Play video">
+            <img src="https://placehold.co/1200x650" width="1200" height="650" alt="" loading="lazy" decoding="async" />
+            <span class="media-card__play" aria-hidden="true">▶</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Our expertise list -->
+      <section class="section section--expertise" aria-labelledby="expertise-title">
+        <div class="container">
+          <p class="eyebrow">Our expertise</p>
+          <h2 id="expertise-title" class="sr-only">Our expertise</h2>
+
+          <ul class="expertise" role="list">
+            <li class="expertise__item">
+              <a class="expertise__link" href="#">
+                <span class="expertise__title">Intellectual property</span>
+                <span class="expertise__desc">Te as as ilicaboribus ut voluptur officandi.</span>
+                <span class="expertise__arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="expertise__item">
+              <a class="expertise__link" href="#">
+                <span class="expertise__title">In-house legal</span>
+                <span class="expertise__desc">Te as as ilicaboribus ut voluptur officandi.</span>
+                <span class="expertise__arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="expertise__item">
+              <a class="expertise__link" href="#">
+                <span class="expertise__title">UPC &amp; IP litigation</span>
+                <span class="expertise__desc">Te as as ilicaboribus ut voluptur officandi.</span>
+                <span class="expertise__arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="expertise__item">
+              <a class="expertise__link" href="#">
+                <span class="expertise__title">IP licensing &amp; monetisation</span>
+                <span class="expertise__desc">Te as as ilicaboribus ut voluptur officandi.</span>
+                <span class="expertise__arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="expertise__item">
+              <a class="expertise__link" href="#">
+                <span class="expertise__title">M&amp;A advisory</span>
+                <span class="expertise__desc">Te as as ilicaboribus ut voluptur officandi.</span>
+                <span class="expertise__arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="expertise__item">
+              <a class="expertise__link" href="#">
+                <span class="expertise__title">In-house privacy</span>
+                <span class="expertise__desc">Te as as ilicaboribus ut voluptur officandi.</span>
+                <span class="expertise__arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="expertise__item">
+              <a class="expertise__link" href="#">
+                <span class="expertise__title">In-house compliance</span>
+                <span class="expertise__desc">Te as as ilicaboribus ut voluptur officandi.</span>
+                <span class="expertise__arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="expertise__item">
+              <a class="expertise__link" href="#">
+                <span class="expertise__title">Career coaching &amp; executive advisory</span>
+                <span class="expertise__desc">Te as as ilicaboribus ut voluptur officandi.</span>
+                <span class="expertise__arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Testimonial slider -->
+      <section class="section section--slider" aria-label="Testimonial">
+        <div class="container">
+          <div class="slider" data-slider>
+            <div class="slider__viewport">
+              <article class="quote" aria-live="polite">
+                <p class="quote__text" data-quote-text>
+                  Pore elitectur min renteniatem solo et evendania dolorum rest
+                  quo doluptios essuscis asim elen quunt. Altitistis cus. Que
+                  vel elit elent es cusant et modi si doluptatem.
+                </p>
+                <p class="quote__meta" data-quote-meta>
+                  Name, job title and company
+                </p>
+              </article>
+            </div>
+
+            <button class="slider__btn slider__btn--prev" type="button" aria-label="Previous testimonial" data-prev>
+              <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 383 665" xmlns="http://www.w3.org/2000/svg"><path d="m104.704 685.248c24.825 24.817 65.671 24.817 90.496 0l316.8-316.8 316.8 316.8c11.928 11.52 27.879 17.966 44.462 17.966 35.109 0 64-28.891 64-64 0-16.583-6.446-32.534-17.966-44.462l-362.048-362.048c-24.825-24.817-65.671-24.817-90.496 0l-362.048 362.048c-24.817 24.825-24.817 65.671 0 90.496z" fill-rule="nonzero" transform="matrix(0 .78125 .78125 0 -167.258789 -67.258789)"/></svg>
+              <span aria-hidden="true">Previous Slide</span>
+            </button>
+
+            <button class="slider__btn slider__btn--next" type="button" aria-label="Next testimonial" data-next>
+              <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 383 665" xmlns="http://www.w3.org/2000/svg"><path d="m104.704 685.248c24.825 24.817 65.671 24.817 90.496 0l316.8-316.8 316.8 316.8c11.928 11.52 27.879 17.966 44.462 17.966 35.109 0 64-28.891 64-64 0-16.583-6.446-32.534-17.966-44.462l-362.048-362.048c-24.825-24.817-65.671-24.817-90.496 0l-362.048 362.048c-24.817 24.825-24.817 65.671 0 90.496z" fill-rule="nonzero" transform="matrix(0 .78125 -.78125 0 549.891301 -67.258699)"/></svg>
+              <span aria-hidden="true">Next Slide</span>
+            </button>
+
+            <div class="slider__dots" role="tablist" aria-label="Testimonials">
+              <button class="dot" type="button" aria-label="Go to slide 1" data-dot="0"></button>
+              <button class="dot" type="button" aria-label="Go to slide 2" data-dot="1"></button>
+              <button class="dot" type="button" aria-label="Go to slide 3" data-dot="2"></button>
+              <button class="dot" type="button" aria-label="Go to slide 4" data-dot="3"></button>
+              <button class="dot" type="button" aria-label="Go to slide 5" data-dot="4"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our history (JS timeline) -->
+      <section class="section section--history" aria-labelledby="history-title">
+        <div class="container">
+          <h2 id="history-title" class="history__title caps">Our history</h2>
+
+          <div class="history" data-timeline>
+            <ol class="history__years" aria-label="Years" role="list">
+              <li><button type="button" class="history__year is-active" aria-current="true" data-year="1985">1985</button></li>
+              <li><button type="button" class="history__year" data-year="2003">2003</button></li>
+              <li><button type="button" class="history__year" data-year="2006">2006</button></li>
+              <li><button type="button" class="history__year" data-year="2014">2014</button></li>
+              <li><button type="button" class="history__year" data-year="2017">2017</button></li>
+              <li><button type="button" class="history__year" data-year="2018">2018</button></li>
+              <li><button type="button" class="history__year" data-year="2023">2023</button></li>
+              <li><button type="button" class="history__year" data-year="2024">2024</button></li>
+            </ol>
+
+            <div class="history__content" aria-live="polite">
+              <p class="history__bigyear" data-history-year>1985</p>
+              <p class="history__blurb" data-history-text>
+                Stuart Adamson founds the business in Leeds, establishing a specialist executive search firm focused on delivering high-quality talent solutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="history__cta">
+            <a class="btn btn--primary" href="#">Get in touch</a>
+            <a class="btn btn--ghost" href="#">Our people <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">ADAMSONS</span>
+          <p class="footer__copy">© 2026 Copyright Adamsons</p>
+        </div>
+
+        <div class="footer__links" aria-label="Footer links">
+          <a href="#">Terms of use</a>
+          <a href="#">Login</a>
+          <a href="#">Subscribe</a>
+          <a class="footer__social" href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 8h4V24h-4V8Zm7 0h3.8v2.2h.05c.53-1 1.84-2.2 3.78-2.2C19.5 8 22 10.1 22 14.3V24h-4v-8.4c0-2-.04-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.5V24h-4V8Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
