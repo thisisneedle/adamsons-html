@@ -342,6 +342,7 @@ a.header-cta {
 .hero__content h1 {
   margin: 0;
   font-size: 82px;
+  line-height: 1.1;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   text-shadow: -4px 4px 8px rgba(0, 0, 0, 0.4);
@@ -1297,7 +1298,7 @@ a.header-cta {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
 
   .brand {
     margin: 0;
