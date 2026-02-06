@@ -178,6 +178,7 @@ a:hover {
   width: 42px;
   height: 42px;
   border: 0;
+  outline: none;
   background: transparent;
   border-radius: 999px;
   display: inline-grid;
@@ -193,7 +194,6 @@ a:hover {
 .icon-btn svg {
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 
 /* ========== Header ========== */
